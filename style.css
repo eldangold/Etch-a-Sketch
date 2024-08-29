@@ -1,0 +1,19 @@
+.divSquare{
+    border: solid 2px black;
+    margin: 2px;
+    xmin-width: 10px;
+    xmin-height: 10px;
+    width: 50%;
+    height: 100vp;
+  }
+  
+  #container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    xwidth: 300px;
+    xheight: 300px;
+    border: solid 2px green;
+    flex-wrap: wrap;
+  }
