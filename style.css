@@ -8,8 +8,8 @@
   }
   
   #container {
-    width: 300px;
-    height: 300px;
+    width: 960px;
+    height: 720px;
     display: flex;
     flex-direction: row;
     xwidth: 300px;
