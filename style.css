@@ -12,8 +12,6 @@
     height: 720px;
     display: flex;
     flex-direction: row;
-    xwidth: 300px;
-    xheight: 300px;
     border: solid 2px green;
     flex-wrap: wrap;
   }
