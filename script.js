@@ -16,7 +16,17 @@ for (block of document.querySelectorAll(".columnBlock")) {
     block.addEventListener("mouseover", hoverEffect);
    }
 
+
+   let hoverColor = () =>  { 
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    return `#${randomColor}`
+}
+
+
+
 function hoverEffect(block) {
-    block.target.classList.add("isHovered");
+    //block.target.classList.add("isHovered");
+    block.target.style.backgroundColor = hoverColor();
 
 }
+
