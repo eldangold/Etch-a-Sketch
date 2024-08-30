@@ -1,26 +1,39 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .rowBlock{
     display: flex;
     flex-direction: column;
     flex: 1;
 }    
   
-  #rowContainer {
+#rowContainer {
     display: flex;
     width: 600px;
     height: 600px;
-    border: solid 2px green;
-  }
+}
 
 
-    .columnContainer {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
-    .columnBlock {
-        border: solid 2px black;
-        display: flex;
-        flex: 1;
-        background-color: yellow;
-    }
+.columnBlock {
+    border: solid 2px black;
+    display: flex;
+    flex: 1;
+    background-color: yellow;
+}
