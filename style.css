@@ -1,15 +1,30 @@
-.divSquare{
-    border: solid 2px black;
-    margin: 2px;
-    width: 50%;
-    height: 100vp;
-  }
-  
-  #container {
-    width: 960px;
-    height: 720px;
+body {
     display: flex;
-    flex-direction: row;
+}
+.rowBlock{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: chocolate;
+}    
+  
+  #rowContainer {
+    display: flex;
+    width: 600px;
+    height: 600px;
     border: solid 2px green;
-    flex-wrap: wrap;
   }
+
+
+    .columnContainer {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .columnBlock {
+        border: solid 2px black;
+        display: flex;
+        flex: 1;
+        background-color: yellow;
+    }
