@@ -1,11 +1,8 @@
 let rowBlock = document.createElement("div");
 rowBlock.className = "rowBlock";
 let rowContainer = document.getElementById("rowContainer");
-//let columnContainer = document.createElement("div");
-//columnContainer.className = "columnContainer";
 let columnBlock = document.createElement("div");
 columnBlock.className = "columnBlock";
-
 
 for (let x = 1; x <= 10; x++) {
     rowBlock.appendChild(columnBlock.cloneNode(true));
