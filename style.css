@@ -1,11 +1,7 @@
-body {
-    display: flex;
-}
 .rowBlock{
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: chocolate;
 }    
   
   #rowContainer {

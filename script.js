@@ -1,22 +1,16 @@
-let div = document.createElement("div");
-div.className = "rowBlock";
+let rowBlock = document.createElement("div");
+rowBlock.className = "rowBlock";
 let rowContainer = document.getElementById("rowContainer");
-let columnContainer = document.createElement("div");
-columnContainer.className = "columnContainer";
+//let columnContainer = document.createElement("div");
+//columnContainer.className = "columnContainer";
 let columnBlock = document.createElement("div");
 columnBlock.className = "columnBlock";
 
 
-for (let x = 1; x <= 100; x++) {
-    columnContainer.appendChild(columnBlock.cloneNode(true));
- } 
-
-for (let x = 1; x <= 100; x++) {
-    div.appendChild(columnContainer);
+for (let x = 1; x <= 10; x++) {
+    rowBlock.appendChild(columnBlock.cloneNode(true));
  }
-
-
  
- for (let i = 0; i < 100; i++) {
-    rowContainer.appendChild(div.cloneNode(true));
+ for (let i = 0; i < 10; i++) {
+    rowContainer.appendChild(rowBlock.cloneNode(true));
 }
