@@ -28,6 +28,12 @@ function hoverEffect(block) {
     block.target.style.backgroundColor = hoverColor();
 
 }
+let gridSize = prompt("Type your preferred grid size");
+if (gridSize>100) {
+    alert("Number is too big. Value of 100 will be used instead");
+    makeGrid(100);
+}
 
-makeGrid(10);
-
+else {
+    makeGrid(gridSize);
+}
