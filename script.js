@@ -1,16 +1,19 @@
+function makeGrid(size) {
+
 let rowBlock = document.createElement("div");
 rowBlock.className = "rowBlock";
-let rowContainer = document.getElementById("rowContainer");
+let rowContainer = document.createElement("div");
+rowContainer.id = "rowContainer";
 let columnBlock = document.createElement("div");
 columnBlock.className = "columnBlock";
 
-function makeGrid(size) {
     for (let x = 1; x <= size; x++) {
         rowBlock.appendChild(columnBlock.cloneNode(true));
     }
     
     for (let i = 0; i < size; i++) {
         rowContainer.appendChild(rowBlock.cloneNode(true));
+        mainContainer.appendChild(rowContainer);
     }
 
     for (block of document.querySelectorAll(".columnBlock")) {
@@ -24,16 +27,26 @@ let hoverColor = () =>  {
 }
 
 function hoverEffect(block) {
-    //block.target.classList.add("isHovered");
     block.target.style.backgroundColor = hoverColor();
 
 }
-let gridSize = prompt("Type your preferred grid size");
-if (gridSize>100) {
-    alert("Number is too big. Value of 100 will be used instead");
-    makeGrid(100);
+
+
+function clearStart() {
+    let gridSize = prompt("Type your preferred grid size");
+    let gridExists = document.getElementById("rowContainer");
+    if (gridSize>100) {
+        alert("Number is too big. Value of 100 will be used instead");
+        if (gridExists !== null) {
+            gridExists.remove();
+        }
+        else makeGrid(100);
+    }
+    else {
+        if (gridExists !== null) {
+            gridExists.remove();
+        }
+        else makeGrid(gridSize);
+    }
 }
 
-else {
-    makeGrid(gridSize);
-}
