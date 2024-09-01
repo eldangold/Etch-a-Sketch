@@ -1,11 +1,11 @@
 function makeGrid(size) {
 
-let rowBlock = document.createElement("div");
-rowBlock.className = "rowBlock";
-let rowContainer = document.createElement("div");
-rowContainer.id = "rowContainer";
-let columnBlock = document.createElement("div");
-columnBlock.className = "columnBlock";
+    let rowBlock = document.createElement("div");
+    rowBlock.className = "rowBlock";
+    let rowContainer = document.createElement("div");
+    rowContainer.id = "rowContainer";
+    let columnBlock = document.createElement("div");
+    columnBlock.className = "columnBlock";
 
     for (let x = 1; x <= size; x++) {
         rowBlock.appendChild(columnBlock.cloneNode(true));
@@ -31,22 +31,15 @@ function hoverEffect(block) {
 
 }
 
-
 function clearStart() {
     let gridSize = prompt("Type your preferred grid size");
     let gridExists = document.getElementById("rowContainer");
+    gridExists.remove()
     if (gridSize>100) {
         alert("Number is too big. Value of 100 will be used instead");
-        if (gridExists !== null) {
-            gridExists.remove();
-        }
-        else makeGrid(100);
-    }
-    else {
-        if (gridExists !== null) {
-            gridExists.remove();
+        makeGrid(100);
         }
         else makeGrid(gridSize);
     }
-}
 
+makeGrid(16);
