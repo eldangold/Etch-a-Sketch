@@ -39,10 +39,6 @@ body {
     flex: 1;
 }
 
-.isHovered {
-    background-color: yellow;
-}
-
 button {
     display: flex;
     margin-left: auto;
