@@ -1,10 +1,10 @@
 function makeGrid(size) {
 
-    let rowBlock = document.createElement("div");
+    const rowBlock = document.createElement("div");
     rowBlock.className = "rowBlock";
-    let rowContainer = document.createElement("div");
+    const rowContainer = document.createElement("div");
     rowContainer.id = "rowContainer";
-    let columnBlock = document.createElement("div");
+    const columnBlock = document.createElement("div");
     columnBlock.className = "columnBlock";
 
     for (let x = 1; x <= size; x++) {
@@ -28,12 +28,11 @@ let hoverColor = () =>  {
 
 function hoverEffect(block) {
     block.target.style.backgroundColor = hoverColor();
-
 }
 
 function clearStart() {
-    let gridSize = prompt("Type your preferred grid size");
-    let gridExists = document.getElementById("rowContainer");
+    const gridSize = prompt("Type your preferred grid size");
+    const gridExists = document.getElementById("rowContainer");
     gridExists.remove()
     if (gridSize>100) {
         alert("Number is too big. Value of 100 will be used instead");
