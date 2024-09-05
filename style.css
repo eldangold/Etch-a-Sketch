@@ -1,5 +1,6 @@
 html,
 body {
+    position: fixed;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -20,8 +21,8 @@ body {
   
 #rowContainer {
     display: flex;
-    width: 750px;
-    height: 750px;
+    width: 700px;
+    height: 700px;
     border: solid 9px lightseagreen;
 }
 
